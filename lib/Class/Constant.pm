@@ -244,6 +244,25 @@ And of course, you can do both:
           $facing->x." in x and ".
           $facing->y." in y.";
 
+
+=head1 DIAGNOSTICS
+
+=over
+
+=item C<< Can't locate constant with ordinal "%s" in package "%s" >>
+
+The value passed to C<by_ordinal> does not corespond to any constant in the
+named package. This usually means the value you've specified is greater than
+the number of declared constants.
+
+=item C<< Can't locate named constant "%s" for "%s" >>
+
+A named constant associated with a declared constant was not found. It was
+probably not defined; check your declarations.
+
+=back
+
+
 =head1 AUTHOR
 
 Robert Norris (rob@cataclysm.cx)
