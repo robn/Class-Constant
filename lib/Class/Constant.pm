@@ -3,7 +3,7 @@ package Class::Constant;
 use warnings;
 use strict;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 my %ordinal_for_data;
 my %data_by_ordinal;

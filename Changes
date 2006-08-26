@@ -19,7 +19,7 @@ Revision history for Class-Constant
         - Produce a sane error message if argument to by_ordinal doesn't
           exist
 
-0.05
+0.05    28 August 2006
         - Rewrote documentation
         - Made subvalue accessors be called get_*
         - Renamed Class::Constant::Value to be Class::Constant::Object
