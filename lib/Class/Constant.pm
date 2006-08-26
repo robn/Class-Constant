@@ -114,15 +114,22 @@ sub AUTOLOAD {
 
     return if $method =~ m/^[A-Z]+$/;
 
+    if ($method !~ m/^get_/) {
+        require Carp;
+        Carp::croak("Can't locate object method \"$method\" via package \"$pkg\"");
+    }
+
+    my ($name) = $method =~ m/^get_(.*)/;
+
     my $data = $data_by_ordinal{ref $_[0]}->[${$_[0]}];
     return if not $data;
 
-    if (not exists $data->{methods} or not exists $data->{methods}->{$method}) {
+    if (not exists $data->{methods} or not exists $data->{methods}->{$name}) {
         require Carp;
-        Carp::croak("Can't locate named constant \"$method\" for \"" .ref($_[0]). "::$data->{name}\"");
+        Carp::croak("Can't locate named constant \"$name\" for \"" .ref($_[0]). "::$data->{name}\"");
     }
 
-    return $data->{methods}->{$method};
+    return $data->{methods}->{$name};
 }
 
 1;

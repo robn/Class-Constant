@@ -21,3 +21,4 @@ Revision history for Class-Constant
 
 0.05
         - Rewrote documentation
+        - Made subvalue accessors be called get_*
