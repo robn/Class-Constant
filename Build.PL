@@ -9,6 +9,8 @@ my $builder = Module::Build->new(
     dist_version_from   => 'lib/Class/Constant.pm',
     build_requires => {
         'Test::More' => 0,
+    },
+    requires => {
         'Scalar::Util' => 0,
     },
     add_to_cleanup      => [ 'Class-Constant-*' ],
