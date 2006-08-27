@@ -6,7 +6,10 @@ README
 lib/Class/Constant.pm
 t/00-load.t
 t/compare.t
+t/names.t
 t/ordinal.t
 t/sequence.t
-t/pod-coverage.t
+t/subclass.t
+t/values.t
 t/pod.t
+t/pod-coverage.t
