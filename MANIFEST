@@ -13,3 +13,4 @@ t/subclass.t
 t/values.t
 t/pod.t
 t/pod-coverage.t
+Makefile.PL
