@@ -23,3 +23,7 @@ Revision history for Class-Constant
         - Rewrote documentation
         - Made subvalue accessors be called get_*
         - Renamed Class::Constant::Value to be Class::Constant::Object
+
+0.06    24 August 2010
+        - Updated tests and overload operators to do the right thing with
+          Test::More 0.95+.
