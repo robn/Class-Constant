@@ -8,7 +8,7 @@ my $builder = Module::Build->new(
     dist_author         => 'Robert Norris <Robert.Norris@its.monash.edu.au>',
     dist_version_from   => 'lib/Class/Constant.pm',
     build_requires => {
-        'Test::More' => 0,
+        'Test::More' => 0.95,
     },
     requires => {
         'Scalar::Util' => 0,
