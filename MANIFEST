@@ -1,16 +1,17 @@
 Build.PL
 Changes
-MANIFEST
-META.yml # Will be created by "make dist"
-README
 lib/Class/Constant.pm
+Makefile
+Makefile.PL
+MANIFEST
+META.yml			# Will be created by "make dist"
+README
 t/00-load.t
 t/compare.t
 t/names.t
 t/ordinal.t
+t/pod-coverage.t
+t/pod.t
 t/sequence.t
 t/subclass.t
 t/values.t
-t/pod.t
-t/pod-coverage.t
-Makefile.PL
