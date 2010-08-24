@@ -5,7 +5,7 @@ use Module::Build;
 my $builder = Module::Build->new(
     module_name         => 'Class::Constant',
     license             => 'perl',
-    dist_author         => 'Robert Norris <Robert.Norris@its.monash.edu.au>',
+    dist_author         => 'Robert Norris <rob@eatenbyagrue.org>',
     dist_version_from   => 'lib/Class/Constant.pm',
     build_requires => {
         'Test::More' => 0.95,

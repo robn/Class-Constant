@@ -339,9 +339,9 @@ probably not defined; check your declarations.
 
 =head1 AUTHOR
 
-Robert Norris (rob@cataclysm.cx)
+Robert Norris E<lt>rob@eatenbyagrue.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2006 Robert Norris. This program is free software; you can
-redistribute it and/or modify it under the same terms as Perl itself.
+Copyright (c) 2006-2010 Robert Norris. This program is free software; you can
+redistribute it and/or modify it under the terms of the Artistic License v2.
