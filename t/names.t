@@ -1,6 +1,6 @@
 #!perl -T
 
-use Test::More 'no_plan';
+use Test::More tests => 3;
 
 use Class::Constant
     ALPHA            => "alpha",

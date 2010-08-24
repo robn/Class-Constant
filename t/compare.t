@@ -1,6 +1,6 @@
 #!perl -T
 
-use Test::More 'no_plan';
+use Test::More tests => 9;
 
 use Class::Constant ZERO, ONE, TWO;
 
