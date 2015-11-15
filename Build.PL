@@ -15,6 +15,11 @@ my $builder = Module::Build->new(
     },
     add_to_cleanup      => [ 'Class-Constant-*' ],
     create_makefile_pl => 'passthrough',
+    meta_merge => {
+        resources => {
+            repository => 'https://github.com/robn/Class-Constant',
+        }
+    },
 );
 
 $builder->create_build_script();

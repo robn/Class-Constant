@@ -341,6 +341,10 @@ probably not defined; check your declarations.
 
 Robert Norris E<lt>rob@eatenbyagrue.orgE<gt>
 
+=head1 REPOSITORY
+
+L<https://github.com/robn/Class-Constant>
+
 =head1 COPYRIGHT
 
 Copyright (c) 2006-2010 Robert Norris. This program is free software; you can
