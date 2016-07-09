@@ -1,9 +1,9 @@
 package Class::Constant;
 
+# ABSTRACT: Build constant classes
+
 use warnings;
 use strict;
-
-our $VERSION = '0.06';
 
 my %ordinal_for_data;
 my %data_by_ordinal;
@@ -142,6 +142,10 @@ sub AUTOLOAD {
 1;
 
 __END__
+
+=encoding UTF-8
+
+=for markdown [![Build Status](https://secure.travis-ci.org/robn/Class-Constant.png)](http://travis-ci.org/robn/Class-Constant)
 
 =head1 NAME
 

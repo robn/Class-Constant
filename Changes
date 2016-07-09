@@ -1,3 +1,9 @@
+{{$NEXT}}
+- Move packaging/build to dist.ini
+
+----------
+Pre-dist.ini revision history
+
 Revision history for Class-Constant
 
 0.01    4 August 2006
