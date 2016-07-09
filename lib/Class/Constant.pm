@@ -5,6 +5,8 @@ package Class::Constant;
 use warnings;
 use strict;
 
+use Scalar::Util qw(looks_like_number);
+
 my %ordinal_for_data;
 my %data_by_ordinal;
 
@@ -36,20 +38,20 @@ sub import {
             $data{object} = \do { my $x = $data{ordinal} };
 
             $data{value} = $value;
-            $value++;
+            $value++ if looks_like_number($value);
 
             next;
         }
 
         if (ref $arg eq "HASH") {
             $data{methods} = $value = $arg;
-            $value++;
+            $value++ if looks_like_number($value);
 
             next;
         }
 
         $data{value} = $value = $arg;
-        $value++;
+        $value++ if looks_like_number($value);
     }
 
     if (exists $data{name}) {
